@@ -1,0 +1,22 @@
+https://www.youtube.com/watch?v=I-MhmB5B6Zk&t=1767s
+
+npm i express express-handlebars -morgan mongoose
+
+npm i -D @babel/core @babel/cli @babel/node @babel/preset-env nodemon
+
+package.json
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+
+  ejecutar:
+  1.- en una terminal iniciar mongo con mongod
+  2.- npm run dev
+
+
+  mongo (en la linea de comnados de mongo):
+    show dbs (para ver las db)
+    use <nombre de la base de datos> ejemplo: use crud-mongo
+    show collections (muestra las colecciones en plural)
+    db.<nombre de la coleccion>find({}).pretty()  muestra los objetos de las colecciones ejemplo: db.tasks.find({}).pretty()
